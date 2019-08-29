@@ -1,0 +1,97 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	min-width: 600px;
+	max-width: 1440px;
+}
+
+header {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	color: #D2908B;
+}
+
+.tittle {
+	font-size: 1.875rem;
+	line-height: 2.25rem;
+	margin-left: 65px;
+	align-self: center;
+}
+
+.header-links {
+	margin-top: 65px;
+	margin-bottom: 5px;
+	display: inline-flex;
+}
+
+.header-links a {
+	color: #D2908B;
+	text-decoration: none;
+}
+
+.blind {
+	display: block;
+	background-image: url(images/eye.png);
+	background-repeat:  no-repeat;
+	background-size: 11%;
+	text-indent: 35px;
+	margin-left: 30px;
+}
+
+/* Навигационная панель */
+
+.nav-bar {
+	display: flex;
+	flex-wrap: wrap;
+	background: #D2908B;
+    min-height: 100px;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar ul {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	justify-content: space-around;
+	flex-wrap: wrap;      
+}
+
+.nav-bar li {
+    display: flex;
+    align-items: center;
+    width: 192px;
+}
+
+.nav-bar a {
+        width: 100%;
+        text-align: center;
+        display: block;
+	text-decoration: none;
+	font-size: 1.25rem;
+	line-height: 1.5rem;
+	color: #FFFFFF;
+}
+
+.search-form {
+	display: inline-block;
+	margin-right : 17px;
+	width: 300px;
+}
+
+.search-form .search-text {
+	background-image: url(images/glass.png);
+	background-repeat:  no-repeat;
+        background-position: 13px 5px;
+	text-indent: 56px;
+	width: 100%;
+	height: 35px;
+	font-size: 0.875rem;
+	line-height: 1.0625rem;
+	display: inline-block;
+	border-radius: 5px;
+	box-shadow: none;
+        border: none;
+}
