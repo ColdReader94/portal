@@ -1,8 +1,12 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	min-width: 600px;
+}
+
+.wrapper {
+    	min-width: 600px;
 	max-width: 1440px;
+        margin: 0 auto;
 }
 
 header {
@@ -10,6 +14,7 @@ header {
 	display: flex;
 	justify-content: space-between;
 	color: #D2908B;
+        background: #F6EFE8;
 }
 
 .tittle {
@@ -20,7 +25,7 @@ header {
 }
 
 .header-links {
-	margin-top: 65px;
+        margin-top: 65px;
 	margin-bottom: 5px;
 	display: inline-flex;
 }
@@ -31,12 +36,13 @@ header {
 }
 
 .blind {
+        margin-right: 20px;
 	display: block;
 	background-image: url(images/eye.png);
 	background-repeat:  no-repeat;
 	background-size: 11%;
 	text-indent: 35px;
-	margin-left: 30px;
+	margin-left: 12px;
 }
 
 /* Навигационная панель */
