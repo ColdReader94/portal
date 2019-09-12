@@ -65,9 +65,9 @@ header {
 	flex-wrap: wrap;      
 }
 
-.nav-bar li {
-    display: flex;
-    align-items: center;
+.menu li {
+    position: relative;
+    display: inline-block;
     width: 192px;
 }
 
@@ -79,6 +79,28 @@ header {
 	font-size: 1.25rem;
 	line-height: 1.5rem;
 	color: #FFFFFF;
+}
+
+.menu .sub-menu {
+  position: absolute;
+  display: none;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: red;
+  z-index: 10;
+  self-align: flex-end;
+}
+.menu .sub-menu a {
+  margin-bottom: -1px;
+  color: white;
+  text-decoration: none;
+  /* border: 1px solid #e5e5e5; */
+}
+
+.menu > li:hover .sub-menu {
+  display: flex;
 }
 
 .search-form {
