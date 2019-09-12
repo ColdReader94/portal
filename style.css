@@ -56,22 +56,22 @@ header {
     align-items: center;
 }
 
-.nav-bar ul {
-	display: flex;
+.menu {
 	margin: 0;
 	padding: 0;
 	list-style: none;
-	justify-content: space-around;
-	flex-wrap: wrap;      
 }
 
 .menu li {
     position: relative;
     display: inline-block;
     width: 192px;
+    height: 100px;
+/*    -webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);*/
 }
 
-.nav-bar a {
+.menu a {
         width: 100%;
         text-align: center;
         display: block;
@@ -80,6 +80,22 @@ header {
 	line-height: 1.5rem;
 	color: #FFFFFF;
 }
+
+.menu li a div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu:after
+{
+content:"";
+display:inline-block;
+height:100%;
+width:0px;
+overflow:hidden;
+vertical-align:middle;
+}
+
 
 .menu .sub-menu {
   position: absolute;
@@ -90,7 +106,6 @@ header {
   list-style: none;
   background-color: red;
   z-index: 10;
-  self-align: flex-end;
 }
 .menu .sub-menu a {
   margin-bottom: -1px;
@@ -100,7 +115,7 @@ header {
 }
 
 .menu > li:hover .sub-menu {
-  display: flex;
+  display: block;
 }
 
 .search-form {
