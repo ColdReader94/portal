@@ -7,6 +7,7 @@ body {
     	min-width: 600px;
 	max-width: 1440px;
         margin: 0 auto;
+/*        padding: 0 20px;*/
 }
 
 header {
@@ -48,11 +49,11 @@ header {
 /* Навигационная панель */
 
 .nav-bar {
-	display: flex;
-	flex-wrap: wrap;
-	background: #D2908B;
+    display: flex;
+    flex-wrap: wrap;
+    background: #D2908B;
     min-height: 100px;
-	justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -64,13 +65,12 @@ header {
   justify-content: flex-start;
   align-items: stretch;
   flex-wrap: wrap;
-  height: 100px;
 }
 
 .menu li {
   position: relative;
   width: 192px;
- 
+  height: 100px;
 }
 
 .menu a {
@@ -95,6 +95,10 @@ header {
   z-index: 1;
 }
 
+.menu .sub-menu li {
+  height: 50px;  
+}
+  
 .menu .sub-menu a {
   margin-bottom: -1px;
   color: white;
@@ -102,32 +106,45 @@ header {
   padding:3px 5px;
 }
 
-.menu a:hover {
-  background-color: salmon;
+.menu li:hover {
+  background-color: #C3827D;
 }
 
-.menu>li:hover .sub-menu {
+.menu > li:hover .sub-menu {
   display: block;
+  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
+.menu li:active {
+    border: 4px solid #F7EFE8;
+    box-sizing: border-box;
+}
 
 .search-form {
-	display: inline-block;
-	margin-right : 17px;
-	width: 300px;
+    display: inline-block;
+    margin-right : 17px;
+    width: 300px;
+    padding: 20px 0;
+    
+    
 }
 
 .search-form .search-text {
-	background-image: url(images/glass.png);
-	background-repeat:  no-repeat;
-        background-position: 13px 5px;
-	text-indent: 56px;
-	width: 100%;
-	height: 35px;
-	font-size: 0.875rem;
-	line-height: 1.0625rem;
-	display: inline-block;
-	border-radius: 5px;
-	box-shadow: none;
-        border: none;
+    background-image: url(images/glass.png);
+    background-repeat:  no-repeat;
+    background-position: 13px 5px;
+    text-indent: 56px;
+    width: 100%;
+    height: 35px;
+    font-size: 0.875rem;
+    line-height: 1.0625rem;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: none;
+    border: none;
+}
+
+textarea:focus, 
+input:focus{
+    outline: none;
 }
