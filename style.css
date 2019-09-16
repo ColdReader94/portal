@@ -7,6 +7,7 @@ body {
     	min-width: 600px;
 	max-width: 1440px;
         margin: 0 auto;
+        background: #F6EFE8;
 /*        padding: 0 20px;*/
 }
 
@@ -125,8 +126,7 @@ header {
     margin-right : 17px;
     width: 300px;
     padding: 20px 0;
-    
-    
+       
 }
 
 .search-form .search-text {
@@ -145,6 +145,43 @@ header {
 }
 
 textarea:focus, 
-input:focus{
+input:focus {
     outline: none;
+}
+
+.navigation {
+    padding: 5px 20px; 
+    
+}
+
+.navigation a:last-child {
+   display: inline;
+   color: #D2908B;
+   text-decoration: none;
+   padding-left: 20px;
+   vertical-align: top;
+   line-height: 17px;
+}
+
+.content {
+   border: solid 1px #e7e7e7;
+}
+
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item-left {
+  flex-shrink: 1;
+  flex: 2;
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+}
+
+.grid-item-right {
+  flex: 1;
+  padding: 12px;
+  border: solid 1px #e7e7e7;
+   flex-shrink: 1;
 }
