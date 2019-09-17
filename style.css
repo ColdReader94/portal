@@ -168,12 +168,31 @@ input:focus {
    border: solid 1px #e7e7e7;
 }
 
+.grid-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-item-left {
+  padding-left: 20px;
+  margin-right: 15px; 
+  flex: 2;
+  border: solid 1px #e7e7e7;
+}
+
+.grid-item-right {
+  padding-right: 20px;
+  flex: 1; 
+  border: solid 1px #e7e7e7;
+   flex-shrink: 2;
+}
+
 h2 {
    margin: 0;
    color: #D2908B
 }
 
-p {
+.grid-item-left p {
     text-align: justify;
     margin: 0;
     padding: 15px 0;
@@ -186,26 +205,63 @@ p {
     padding: 0;
 }
 
-.grid-item-right p {
-    padding-top: 15px;
+iframe {
+     border: 2px solid #D2908B;
+     width: 430px; 
+     height: 250px;
 }
 
-.grid-row {
-  display: flex;
-  flex-wrap: wrap;
+.carousel {
+    position: relative;
+    width: 799px;
+    height: 165px;
+    background: #F5E2E1;
 }
 
-.grid-item-left {
-  padding-left: 20px;
-  margin-right: 15px;
-  flex-shrink: 1;
-  flex: 2;  
-  border: solid 1px #e7e7e7;
+.carousel img {
+    width: 202.77px;
+    height: 146px;    
+    border: 2px solid rgba(210, 144, 139, 0.5);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 1px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;
 }
 
-.grid-item-right {
-  padding-right: 20px;
-  flex: 1; 
-  border: solid 1px #e7e7e7;
-   flex-shrink: 1;
+/*.arrow {
+  position: absolute;
+width: 0;
+	height: 0;
+	border-top: 50px solid transparent;
+	border-right: 100px solid #DDBAB8;
+	border-bottom: 50px solid transparent;
+       
+   
+  display: block;
+}*/
+
+
+.arrow {
+   width: 80px;
+   height: 160px;
+   position: relative;
+   overflow: hidden;
+   display: block;
+
+}
+.arrow:after {
+   content: "";
+   position: absolute;
+   width: 68px;
+   height: 154px;
+   background: #DDBAB8;
+   transform: rotate(45deg); /* Не забываем про префиксы */
+   top: 0px;
+   left: 75px;
+   box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+   border: 2px solid rgba(210, 144, 139, 0.5);
+}
+
+.arrow {
+    transform: rotate(180deg);
 }
