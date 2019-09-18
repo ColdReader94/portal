@@ -218,54 +218,80 @@ iframe {
      
 }
 
+
+body {
+  padding: 10px;
+}
+
 .carousel {
-    display: inline-block;
-    padding-top: 15px;
-    white-space: nowrap;
+  position: relative;  
+  padding: 10px 60px;
+  border: 1px solid #CCC;
+  border-radius: 15px;
+  background: #eee;
 }
 
-.button-prev,
-.button-next {
-    padding-top: 7px;
-    display: inline-block;    
-    transform: scale(2, 4.5); 
-    color: #DDBAB8;
-    text-shadow: 0 3px 4px rgba(0,0,0,0.5);
-    font-size: 52px;
+.carousel img {
+  width: 200px;
+  height: 145px;
+  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+  display: block;  
+border: 2px solid rgba(210, 144, 139, 0.5);
+box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+border-radius: 1px;
 }
 
-.button-prev {
-    margin-right: 5px;
+.arrow {
+  position: absolute;
+  top: 60px;
+  padding: 0;
+  background: #ddd;
+  border-radius: 15px;
+  border: 1px solid gray;
+  font-size: 24px;
+  line-height: 24px;
+  color: #444;
+  display: block;
 }
 
-.button-next {
-    margin-left: 5px;
+.arrow:focus {
+  outline: none;
 }
 
-.field {
-    vertical-align: middle;
-   display: inline-block; 
-
-    box-sizing: border-box;
-    width: 790px;
-    height: 165px;
-    padding: 0 60px;
-    background: #F5E2E1;
-    overflow: hidden;
+.arrow:hover {
+  background: #ccc;
+  cursor: pointer;
 }
 
-.item {
-    margin: 10px 0;
-    display: inline-block;
-    width: 200px;
-    height: 145px;
-    border: 2px solid rgba(210, 144, 139, 0.5);
-    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
-    border-radius: 1px;
-    margin-right: 35px;
+.prev {
+  left: 7px;
 }
 
-.item img {
-    width: 100%;
-    height: 100%;
+.next {
+  right: 7px;
+}
+
+.gallery { 
+  width: 800px;
+  overflow: hidden;
+  background: red;
+  margin: 0 60px;
+}
+
+.gallery ul {
+    
+  height: 150px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  transition: margin-left 250ms;
+  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+  /* http://davidwalsh.name/remove-whitespace-inline-block */
+  font-size: 0;
+}
+
+.gallery li {
+  display: inline-block;
+  margin-right: 35px;
 }
