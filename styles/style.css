@@ -55,7 +55,7 @@ header {
 
 .nav-bar {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     background: #D2908B;
     min-height: 100px;
     justify-content: space-between;
@@ -69,7 +69,7 @@ header {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .menu li {
@@ -97,7 +97,7 @@ header {
   padding: 0;
   list-style: none;
   background-color: #D2908B;
-  z-index: 1;
+  z-index: 1; 
 }
 
 .menu .sub-menu li {
@@ -112,7 +112,7 @@ header {
 }
 
 .menu li:hover {
-  background-color: #C3827D;
+  background-color: #C3827D; 
 }
 
 .menu > li:hover .sub-menu {

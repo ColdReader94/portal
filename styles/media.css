@@ -1,12 +1,95 @@
 
+/*Экстра большие девайсы (большие десктопы, >= 1200px)*/
+@media (min-width: 1200px) {
+
+    
+
+}
+
+
 /*Большие девайсы (большие десктопы, >= 992px)*/
-@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+.nav-bar {
+  flex-wrap: nowrap;   
+}
+
+.menu {
+  flex-wrap: nowrap;
+}
+
+.menu li {
+  width: 150px;
+}
+
+}
 
 /*Средние девайсы («таблетки», >= 768px)*/
-@media (min-width: 768px) and (max-width: 991.98px) { ... }
+@media (min-width: 650px) and (max-width: 991.98px) {
+       
+.nav-bar {
+    flex-wrap: wrap;
+    
+}
 
-/*Малые девайсы («ландшафтные», <= 768px)*/
-@media (max-width: 767.98px) { 
+.menu {
+  width: 100%;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+}
+
+.menu li {
+  width: 20%;
+}
+
+.search-form {
+    width: 80%;
+    margin: 0 auto;
+}
+ 
+/*Отключаем карусель*/
+
+.carousel .arrow {
+    display: none;
+}
+
+.gallery {
+    width: 100%;
+    overflow: visible;
+    background: none;       
+}
+
+.carousel {
+    padding: 0 0px;   
+}
+
+.gallery ul {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.gallery li {
+    width: 20%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.gallery li:first-child {
+    margin-left: 0;   
+}
+
+.gallery li:last-child {
+    margin-right: 0;   
+}
+    
+}
+
+/*Малые девайсы (<= 635px)*/
+@media (max-width: 650px) { 
 
 /*Делаем шапку и меню вертикальными*/
 
@@ -88,7 +171,6 @@ header {
     padding: 0;    
 }
 
-        
 /*Отключаем карусель*/
 
 .carousel .arrow {
@@ -127,7 +209,7 @@ header {
 .gallery li:last-child {
     margin-right: 0;   
 }
-
+        
 /*Ссылки футера колонкой*/
 
 footer {
