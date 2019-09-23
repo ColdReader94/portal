@@ -1,0 +1,157 @@
+
+/*Большие девайсы (большие десктопы, >= 992px)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { ... }
+
+/*Средние девайсы («таблетки», >= 768px)*/
+@media (min-width: 768px) and (max-width: 991.98px) { ... }
+
+/*Малые девайсы («ландшафтные», <= 768px)*/
+@media (max-width: 767.98px) { 
+
+/*Делаем шапку и меню вертикальными*/
+
+header,
+.nav-bar,
+.menu {
+    flex-direction: column;  
+}
+
+header {
+    justify-content: space-around;
+}
+
+.tittle,
+.header-links {
+    margin: 0;
+}
+
+.tittle {
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.header-links {
+    font-size: 1.2em;
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.menu,
+.sub-menu,
+.menu li,
+.sub-menu li{
+    width: 100%;
+}
+
+.blind {
+    padding-right: 0;
+    margin-right: 0;
+}
+
+.menu li a,
+.sub-menu li a{
+   font-size: 1.2em; 
+}
+
+.search-form {
+    width: 80%;
+    margin-right: 0;
+} 
+
+/*Контент в одну колонку*/
+
+
+.grid-row {
+    flex-direction: column;
+}
+
+.grid-item-right,
+.grid-item-left {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+.grid-item-right p {
+  text-align: center;
+}
+
+.grid-item-right p a {  
+  margin-right: 35px;  
+}
+
+.grid-item-right p a:last-child {
+  margin-right: 0;
+}
+
+.row-two {
+    padding: 0;    
+}
+
+        
+/*Отключаем карусель*/
+
+.carousel .arrow {
+    display: none;
+}
+
+.gallery {
+    width: 100%;
+    overflow: visible;
+    background: none;       
+}
+
+.carousel {
+    padding: 0 0px;   
+}
+
+.gallery ul {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.gallery li {
+    width: 20%;
+    height: auto;
+    margin-right: 15px;
+}
+
+.gallery li:first-child {
+    margin-left: 0;   
+}
+
+.gallery li:last-child {
+    margin-right: 0;   
+}
+
+/*Ссылки футера колонкой*/
+
+footer {
+     flex-direction: column;    
+     height: auto;
+     justify-content: center;
+}
+
+footer a {
+    display: flex;
+    align-self: center;
+    padding: 10px;
+}
+
+/*Значки ссылок откл.*/
+
+.feedback,
+.sitemap {
+    display: none;
+}
+
+}
+
+
+
+
+

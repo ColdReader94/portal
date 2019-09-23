@@ -5,8 +5,7 @@ body {
 
 .wrapper {
         display: flex;
-        flex-direction: column;
-    	min-width: 600px;
+        flex-direction: column;    	
 	max-width: 1440px;
         margin: 0 auto;
         background: #F6EFE8;
@@ -308,6 +307,11 @@ border-radius: 1px;
     margin-right: 60px;   
 }
 
+.grid-item-right .links p {
+    display: flex;
+    flex-direction: row;
+}
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -412,3 +416,4 @@ footer a {
     color: #000000;
     line-height: 2.1875rem;
 }
+
