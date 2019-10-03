@@ -59,3 +59,16 @@
       position = Math.max(position, -width * (listElems.length - count));
       list.style.marginLeft = position + 'px';
     };
+    
+//    Открытие выпадающего подменю во втором пункте основного меню
+
+    let subMenuShow = document.querySelector('ul li:nth-child(2)'); 
+    let submenu = document.querySelector('.sub-menu');
+    let traingle = document.querySelector('.menu li:nth-child(2) span');
+    subMenuShow.onclick = function(){
+//        показать подменю:
+        submenu.classList.toggle('open');
+//          индикатор-треугольник вверх:
+        traingle.classList.toggle('up');        
+    };
+ 
