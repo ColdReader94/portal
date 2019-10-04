@@ -63,12 +63,22 @@
 //    Открытие выпадающего подменю во втором пункте основного меню
 
     let subMenuShow = document.querySelector('ul li:nth-child(2)'); 
-    let submenu = document.querySelector('.sub-menu');
+    let subMenu = document.querySelector('.sub-menu');
     let traingle = document.querySelector('.menu li:nth-child(2) span');
-    subMenuShow.onclick = function(){
+    
+    let SwitchMenu = function(){
 //        показать подменю:
-        submenu.classList.toggle('open');
+        subMenu.classList.toggle('open');
 //          индикатор-треугольник вверх:
         traingle.classList.toggle('up');        
     };
- 
+    
+    subMenuShow.addEventListener("click", SwitchMenu);
+    
+//      let subMenuClose = document.querySelectorAll("body:not (ul li:nth-child(2))");
+//    subMenuClose.onclick = function() {
+//        if (subMenu.classList.contains('open')) {
+//        SwitchMenu();
+//        };
+//    };
+// 
