@@ -51,20 +51,12 @@
         margin: 0;
     }
 
-    .grid-item-right p {
-        text-align: center;
-    }
-
-    .grid-item-right p a {  
-        margin-right: 35px;  
-    }
-
-    .grid-item-right p a:last-child {
-        margin-right: 0;
-    }
-
     .row-two {
         padding: 0;    
+    }
+    /*Значки блока ссылок по центру*/
+     .grid-item-right p {
+        justify-content: space-between;
     }
 
     /*Отключаем карусель*/
@@ -79,6 +71,7 @@
     }
 
     .carousel {
+        padding: 0;
         padding-top: 15px;   
     }
 
@@ -88,6 +81,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
+        width: 100%;        
     }
 
     .gallery li {
@@ -185,19 +179,7 @@
         margin: 0;
     }
 
-    .grid-item-right p {
-        text-align: center;
-    }
-
-    .grid-item-right p a {  
-        margin-right: 35px;  
-    }
-
-    .grid-item-right p a:last-child {
-        margin-right: 0;
-    }
-
-    .row-two {
+      .row-two {
         padding: 0;    
     }
 
@@ -258,6 +240,11 @@
         padding: 10px;
     }
 
+    /*Значки блока ссылок по ширине*/
+      .grid-item-right p {
+        justify-content: space-between;
+    }
+    
     /*Значки ссылок откл.*/
 
     .feedback,
