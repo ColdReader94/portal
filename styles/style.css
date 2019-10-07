@@ -345,9 +345,13 @@ border-radius: 1px;
     margin-right: 60px;   
 }
 
-.grid-item-right .links p{
-    display: block;   
+.grid-item-right p {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
+
 
 footer {
     display: flex;
