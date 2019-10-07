@@ -390,9 +390,19 @@ footer a {
 /*Шрифты и цвет текста*/
 
 @font-face {
+    font-family: 'HondaC';
+    src: local('HondaC'),
+        url('../fonts/HondaC.woff2') format('woff2'),
+        url('../fonts/HondaC.woff') format('woff'),
+        url('../fonts/HondaC.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*@font-face {
     font-family: HondaC;
     src: local(HondaC), url(../fonts/HondaC.ttf);
-}
+}*/
 /*
 @font-face {
     font-family: MyraidPro, Arial, Tahoma, sans-serif;
