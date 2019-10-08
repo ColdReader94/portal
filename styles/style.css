@@ -3,10 +3,6 @@ body {
     padding: 0;
 }
 
-.open {
-    display: none;
-}
-
 .wrapper {
     display: flex;
     flex-direction: column;    	
@@ -345,13 +341,16 @@ border-radius: 1px;
     margin-right: 60px;   
 }
 
-.grid-item-right p {
+.links {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
+.links a img {
+    padding-right: 10px;
+}
 
 footer {
     display: flex;
@@ -436,7 +435,8 @@ h2 {
     font-size: 1rem;    
 }
 
-h2 {
+h2,
+.texthide {
     font-size: 1.5rem;    
     color: #D2908B
 }
@@ -467,3 +467,21 @@ footer a {
     line-height: 2.1875rem;
 }
 
+/*версия для слабовидящих*/
+
+/*спрятаные по умолчанию текстовые ссылки версии для слабовидящих*/
+.texthide {
+    display: none;
+    padding: 10px;
+    padding-left: 0;
+}
+
+/*спрятать любой элемент(для js)*/
+.close {
+    display: none;
+}
+
+/*показать любой элемент(для js)*/
+.open {
+    display: block;
+}

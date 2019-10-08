@@ -27,6 +27,7 @@
 //  
 //})();
 
+let carousel = document.querySelector('.carousel');
 
     let i = 1;
     for(let li of carousel.querySelectorAll('li')) {
@@ -48,7 +49,7 @@
       // сдвиг влево
       position += width * count;
       // последнее передвижение влево может быть не на 3, а на 2 или 1 элемент
-      position = Math.min(position, 0)
+      position = Math.min(position, 0);
       list.style.marginLeft = position + 'px';
     };
 
