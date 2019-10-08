@@ -97,6 +97,14 @@
     .gallery li:last-child {
         margin-right: 0;   
     }
+ 
+.links a img {
+    padding: 10px;
+}
+
+.links a img {
+    padding: 10px;
+}
 
 }
 
@@ -126,12 +134,11 @@
         padding-top: 20px;
     }
 
-    .header-links {
-        font-size: 1.2em;
+    .header-links {        
         margin: 0 auto;
         padding: 15px 0;
     }
-
+       
     .menu,
     .sub-menu,
     .menu li,
@@ -225,7 +232,7 @@
     .carousel {
         padding-top: 15px;   
     }
-
+   
     /*Ссылки футера колонкой*/
 
     footer {
@@ -241,14 +248,19 @@
     }
 
     /*Значки блока ссылок по ширине*/
-      .grid-item-right p {
-        justify-content: space-between;
-    }
+      .links {
+        justify-content: center;
+    }   
+    
+    .links a img {
+    padding: 10px;
+}
     
     /*Значки ссылок откл.*/
 
     .feedback,
-    .sitemap {
+    .sitemap,
+    .header-links button {
         display: none;
     }
 
