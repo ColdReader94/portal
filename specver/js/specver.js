@@ -9,9 +9,9 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
     carouselOffBlock.classList.add('close');
     
 //    спрятать изобрадения блока ссылок
-    let linksImg = document.querySelectorAll('.links a img');
+    let linksImg = document.querySelectorAll('.links .column a img');
     for (let e of linksImg) {
-        e.classList.add('close');
+        e.style.display = "none";
     };
     
 //    показать ссылки текстом вместо изображений
