@@ -131,8 +131,8 @@
     }
 
     .tittle,
-    .header-links {
-        margin: 0;
+    .header-links {       
+        padding-left: 0;
     }
 
     .tittle {
