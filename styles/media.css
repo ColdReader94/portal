@@ -15,8 +15,13 @@
 
 }
 
-/*Средние девайсы («таблетки», >= 768px)*/
-@media (min-width: 650px) and (max-width: 991.98px) {
+/*Средние девайсы («таблетки», >= 650px)*/
+@media (min-width: 649.8px) and (max-width: 991.98px) {
+
+    .tittle {
+	font-size: 1.675rem;
+	padding-left: 45px;
+}
 
     .nav-bar {
         flex-wrap: wrap;    
@@ -44,9 +49,11 @@
     .grid-row {
         flex-direction: column;
     }
-
+    
+    
     .grid-item-right,
     .grid-item-left {
+        flex-basis: auto;
         padding: 15px 20px;
         margin: 0;
     }
@@ -109,7 +116,7 @@
 }
 
 /*Малые девайсы (<= 635px)*/
-@media (max-width: 650px) { 
+@media (max-width: 649.8px) { 
 
     /*Делаем шапку и меню вертикальными*/
 
@@ -156,9 +163,14 @@
     }
 
     .header-links {
-        font-size: 1em;
+        font-size: 1em;        
+        align-self: center;
     }
 
+    .language {
+        padding-left: 0;
+    }
+    
     .tittle {
         font-size: 1.5em
     }
@@ -182,6 +194,7 @@
 
     .grid-item-right,
     .grid-item-left {
+        flex-basis: auto;
         padding: 15px 20px;
         margin: 0;
     }

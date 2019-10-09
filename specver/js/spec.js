@@ -1,4 +1,4 @@
-$(document).ready(function() {
+﻿$(document).ready(function() {
     function loadstyle() {
         if ($.cookie('fontSize'))
             parent.$("body *").css("fontSize", $.cookie('fontSize'));
