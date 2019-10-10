@@ -9,7 +9,7 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
     carouselOffBlock.classList.add('close');
     
 //    спрятать изображения блока ссылок
-    let linksImg = document.querySelectorAll('.links a');
+    let linksImg = document.querySelectorAll('.links a img');
     for (let m of linksImg) {
         m.classList.add('close');
     };
