@@ -26,12 +26,12 @@ $(".links .texthide").css("display", "flex");
 //    спрятать кнопку спецверсии
     $(".header-links button").hide();    
     
-//    увеличенный шрифт по умолчанию
-    $("body p, .header-links, footer a, .navigation a").css("font-size", "150%");
-    $("h2").css("font-size", "250%");
-    $(".menu > li span, .sub-menu a").css("font-size", "130%");
-    $(".menu > li > a").css("font-size", "160%");
-    $("body *").css("font-family","Arial");
+////    увеличенный шрифт по умолчанию
+//    $("body p, .header-links, footer a, .navigation a").css("font-size", "150%");
+//    $("h2").css("font-size", "250%");
+//    $(".menu > li span, .sub-menu a").css("font-size", "130%");
+//    $(".menu > li > a").css("font-size", "160%");
+//    $("body *").css("font-family","Arial");
 };   
 //
  
