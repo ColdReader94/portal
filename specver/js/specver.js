@@ -15,10 +15,9 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
 //    показать ссылки текстом вместо изображений
 $(".links .texthide").css("display", "flex");
 
-    $(".links .texthide").show();
-    
-//        блок ссылок переходит на место карусели, нужен отступ слева:     
-    $(".row-two .grid-item-right").css("padding-left", "20px");
+     
+////        блок ссылок переходит на место карусели, нужен отступ слева:     
+//    $(".row-two .grid-item-right").css("padding-left", "20px");
     
 //    спрятать поиск
     $(".search-form").hide();
@@ -26,12 +25,12 @@ $(".links .texthide").css("display", "flex");
 //    спрятать кнопку спецверсии
     $(".header-links button").hide();    
     
-////    увеличенный шрифт по умолчанию
-//    $("body p, .header-links, footer a, .navigation a").css("font-size", "150%");
-//    $("h2").css("font-size", "250%");
-//    $(".menu > li span, .sub-menu a").css("font-size", "130%");
-//    $(".menu > li > a").css("font-size", "160%");
-//    $("body *").css("font-family","Arial");
+//    увеличенный шрифт по умолчанию
+    $("body p, .header-links, footer a, .navigation a").css("font-size", "150%");
+    $("h2").css("font-size", "250%");
+    $(".menu > li span, .sub-menu a").css("font-size", "130%");
+    $(".menu > li > a").css("font-size", "160%");
+    $("body *").css("font-family","Arial");
 };   
 //
  
