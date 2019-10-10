@@ -21,10 +21,20 @@ $(".links .texthide").css("display", "flex");
     $(".row-two .grid-item-right").css("padding-left", "20px");
     
 //    спрятать поиск
-    $(".search-form").hide();    
+    $(".search-form").hide();
+    
+//    спрятать кнопку спецверсии
+    $(".header-links button").hide();    
+    
+//    увеличенный шрифт по умолчанию
+    $("body p, .header-links, footer a, .navigation a").css("font-size", "150%");
+    $("h2").css("font-size", "250%");
+    $(".menu > li span, .sub-menu a").css("font-size", "130%");
+    $(".menu > li > a").css("font-size", "160%");
+    $("body *").css("font-family","Arial");
 };   
 //
-
+ 
 $('.spec').click(function (e) {
 
 if (!$.cookie('openspec'))
