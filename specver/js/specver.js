@@ -3,17 +3,13 @@
 function loadform(){
   $( "<button style='float:right'  onclick='$.removeCookie(\"openspec\", { path: \"/\" });location.reload();'>Закрыть версию для слабовидящих</button>" ).insertBefore( "body" );
 $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src='specver/spec.html'></iframe>" ); 
-
-};
-
-function loadmysets(){
 //Добавлено:
 //    спрятать карусель
     let carouselOffBlock = document.querySelector('.row-two .grid-item-left');
     carouselOffBlock.classList.add('close');
     
-//    спрятать изобрадения блока ссылок
-    let linksImg = document.querySelectorAll('.links img');
+//    спрятать изображения блока ссылок
+    let linksImg = document.querySelectorAll('.links a');
     for (let m of linksImg) {
         m.classList.add('close');
     };
@@ -30,9 +26,7 @@ function loadmysets(){
     
     let searchForm = document.querySelector('.search-form');
     searchForm.classList.add('close');
-};
-
-
+};   
 //
 $('.spec').click(function (e) {
 
@@ -43,10 +37,11 @@ $("body *").css("background", "#fff");
 $("body *").css("color", "#000");
 $("img").css("-webkit-filter", "grayscale(100%)");
 loadform();
-loadmysets();
 }});
 
 if ($.cookie('openspec')==1)
 loadform();
-});
 
+
+
+});
