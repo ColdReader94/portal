@@ -1,18 +1,20 @@
 ﻿$(document).ready(function(){
 
-function loadform(){
+function loadform(){ 
   $( "<button style='float:right'  onclick='$.removeCookie(\"openspec\", { path: \"/\" });location.reload();'>Закрыть версию для слабовидящих</button>" ).insertBefore( "body" );
 $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src='specver/spec.html'></iframe>" ); 
+
+//
 //Добавлено:
 //    спрятать карусель
+
     let carouselOffBlock = document.querySelector('.row-two .grid-item-left');
     carouselOffBlock.classList.add('close');
     
 //    спрятать изображения блока ссылок
-    let linksImg = document.querySelectorAll('.links a img');
-    for (let m of linksImg) {
-        m.classList.add('close');
-    };
+    
+        
+   $(".links a img").hide();
     
 //    показать ссылки текстом вместо изображений
         let textHide = document.querySelectorAll('.links .texthide');
