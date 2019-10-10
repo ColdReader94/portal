@@ -13,9 +13,9 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
    $(".links a img").hide();
     
 //    показать ссылки текстом вместо изображений
-$(".links .texthide").css("display", "flex");
 
-     
+    $(".links .texthide").show();
+    
 ////        блок ссылок переходит на место карусели, нужен отступ слева:     
 //    $(".row-two .grid-item-right").css("padding-left", "20px");
     
