@@ -6,10 +6,10 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
 
 //Добавлено:
 //    спрятать карусель, изображения блока ссылок, поиск, кнопку спецверсии
-    $(".row-two .grid-item-left, .links a img, .search-form, .header-links button").css("display", "none");   
+    $(".row-two .grid-item-left, .links a img, .search-form, .header-links button").hide();   
     
 //    показать ссылки текстом вместо изображений
-$(".links .texthide").css("display", "flex");
+$(".links a .texthide").show();
 
 //    увеличенный шрифт по умолчанию
     $("body p, .header-links, footer a, .navigation a").css("font-size", "150%");
