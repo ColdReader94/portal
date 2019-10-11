@@ -4,9 +4,15 @@ function loadform(){
   $( "<button style='float:right'  onclick='$.removeCookie(\"openspec\", { path: \"/\" });location.reload();'>Закрыть версию для слабовидящих</button>" ).insertBefore( "body" );
 $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src='specver/spec.html'></iframe>" ); 
 
+$(".links a img").ready(function(){
+let linkimg = document.querySelectorAll(".links img");
+for(let e of linkimg){
+    e.style.display = "none";
+   }});
+
 //Добавлено:
 //    спрятать карусель, изображения блока ссылок, поиск, кнопку спецверсии
-    $(".row-two .grid-item-left, .links a img, .search-form, .header-links button").hide();   
+    $(".row-two .grid-item-left, .search-form, .header-links button").hide();   
     
 //    показать ссылки текстом вместо изображений
 $(".links a .texthide").show();
