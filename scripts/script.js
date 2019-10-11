@@ -61,6 +61,12 @@ let carousel = document.querySelector('.carousel');
       list.style.marginLeft = position + 'px';
     };
     
+    //    запрещаем выделение карусели при кликах
+carousel.addEventListener("mousedown", function(event){
+  event.preventDefault();
+});
+    
+    
 //    Открытие выпадающего подменю во втором пункте основного меню
 
     let subMenuShow = document.querySelector('ul li:nth-child(2)'); 
