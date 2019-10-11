@@ -4,11 +4,12 @@ function loadform(){
   $( "<button style='float:right'  onclick='$.removeCookie(\"openspec\", { path: \"/\" });location.reload();'>Закрыть версию для слабовидящих</button>" ).insertBefore( "body" );
 $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src='specver/spec.html'></iframe>" ); 
 
-$(".links a img").ready(function(){
+
 let linkimg = document.querySelectorAll(".links img");
+window.onload = function(){
 for(let e of linkimg){
     e.style.display = "none";
-   }});
+   }};
 
 //Добавлено:
 //    спрятать карусель, изображения блока ссылок, поиск, кнопку спецверсии
