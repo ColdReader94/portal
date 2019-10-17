@@ -7,8 +7,10 @@ $( "body" ).before( "<iframe width='100%' height='110'  style='border: none' src
   
 //Добавлено:
 //    спрятать карусель, изображения блока ссылок, поиск, кнопку спецверсии
-    $(".row-two .grid-item-left, .links a img, .search-form, .header-links button").hide();   
-    
+    $(".row-two .grid-item-left, .search-form, .header-links button").hide();   
+
+$(".links a img").onload = $(".links a img").css("display", "none");
+
 //    показать ссылки текстом вместо изображений
 $(".links .texthide").css("display", "flex");
 
