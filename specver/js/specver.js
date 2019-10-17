@@ -31,6 +31,6 @@ $("img").css("-webkit-filter", "grayscale(100%)");
 loadform();
 }});
 
-if ($.cookie('openspec')==1)
+if ($.cookie('openspec')===1)
 loadform();
 });

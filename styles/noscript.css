@@ -11,3 +11,7 @@
     overflow-x: scroll;
     white-space: nowrap;
 }
+
+.navigation {
+    display: none;
+};
