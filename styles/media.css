@@ -4,7 +4,6 @@
 
 }
 
-
 /*Большие девайсы (большие десктопы, >= 992px)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
 
@@ -282,10 +281,21 @@
     
     .weather {
         text-align: center;
-    };
+    }
+    
+   
+    .announce-line {
+     width: 100%;
+     text-indent: 0;
+     padding-left: 5px;
+     line-height: 1.5rem;
+    }
+    
+    .announce-text {
+       text-indent: 0;
+       text-align: justify;
+       width: 100%;
+    }
+    
 }
-
-
-
-
 
