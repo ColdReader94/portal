@@ -238,17 +238,39 @@ h2 {
     border-bottom: 2px dashed rgba(210, 144, 139, 0.5);
 }
 
+.grid-item-left p:last-child {
+    border: none;
+}
+
+.linkstyle {
+    color: #D2908B;
+    text-decoration: none;
+}
+
+.linkstyle:hover,
+.linkstyle:active,
+.linkstyle:visited {
+    color: #D2908B;
+    text-decoration: none;
+};
+
 .grid-item-right h2,
 .grid-item-right p {
     padding: 0;
 }
 
+/*Местоположение*/
 iframe {
      box-sizing: border-box;
      border: 2px solid #D2908B;
      width: 100%;
      min-height: 292px;
      margin-top: 15px;     
+}
+
+/*Погода*/
+.weather {
+    text-align: right;
 }
 
 .carousel {
@@ -482,4 +504,28 @@ footer a {
 /*показать любой элемент(для js)*/
 .open {
     display: block;
+}
+
+
+.announce-line {
+   width: 85%;
+   background: #DDBAB8;
+   font-weight: bold;
+   color: #FFFFFF;
+   height: 50px;
+   line-height: 50px;
+   text-indent: 10px;
+   margin-top: 25px;
+   font-size: 1.1rem;
+}
+
+.announce-text {
+    min-height: 125px;
+    text-indent: 10px;
+    padding-top: 5px;    
+}
+
+.end {
+    font-weight: normal;
+    font-size: 1rem;
 }
