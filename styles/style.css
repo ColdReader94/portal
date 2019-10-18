@@ -512,7 +512,7 @@ footer a {
    background: #DDBAB8;
    font-weight: bold;
    color: #FFFFFF;
-   height: 50px;
+   min-height: 50px;
    line-height: 50px;
    text-indent: 10px;
    margin-top: 25px;
@@ -520,6 +520,7 @@ footer a {
 }
 
 .announce-text {
+    width: 85%;
     min-height: 125px;
     text-indent: 10px;
     padding-top: 5px;    
