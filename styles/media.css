@@ -113,6 +113,9 @@
     padding: 10px;
 }
 
+  .weather {
+        text-align: left;
+    };
 }
 
 /*Малые девайсы (<= 635px)*/
@@ -276,7 +279,10 @@
     .header-links button {
         display: none;
     }
-
+    
+    .weather {
+        text-align: center;
+    };
 }
 
 

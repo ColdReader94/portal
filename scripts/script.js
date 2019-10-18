@@ -30,7 +30,6 @@ function menuCloseClickOutside(e) {
 };
 
 document.addEventListener('click', menuCloseClickOutside);
-document.addEventListener('touchstart', menuCloseClickOutside);
 
 
 //Кнопка назад
@@ -53,8 +52,9 @@ document.addEventListener("DOMContentLoaded", currentPlace);
 //Предупреждение об отключенном поиске на сайте:
 
   let searchForm = document.querySelector('.search-text');
-  function searchAlert(){
-        if (event.code === 'Enter'){
-        alert("Извините, в настоящее время поиск по сайту недоступен.");};
+  function searchAlert(){        
+        alert("Извините, в настоящее время поиск по сайту недоступен.");
   };
-   searchForm.addEventListener("keyup", searchAlert);
+   searchForm.addEventListener("change", searchAlert);
+   
+   
