@@ -85,7 +85,7 @@ header {
 .menu li {
   position: relative;
   width: 20%;
-  height: 100px;  
+  height: 100px; 
 }
 
 .menu a {
@@ -98,6 +98,7 @@ header {
   height: 100%;
   justify-content: center;
   align-items: center;
+  padding: 0 5px;
 }
 
 .menu .sub-menu {
@@ -123,22 +124,22 @@ header {
   padding: 3px 5px;  
 }
 
-.menu li:nth-child(2) span::after {
+.menu li:nth-child(2) span::before {
   content: ' ▼';
 }
 
-.menu li:nth-child(2) span.up::after {
+.menu li:nth-child(2) span.up::before {
   content: ' ▲';
 }
 
 
-.menu li:nth-child(2) div {
+.menu li:nth-child(2) span {
    display: flex;
    line-height: 1.5rem;
   height: 100%;
   justify-content: center;
   align-items: center;
-   text-align: center; 
+   text-align: center;
 }
 
 .menu li:hover {
@@ -204,7 +205,8 @@ input:focus {
 /*Сетка контента*/
 
 .content {
-   margin-top: 45px;  
+   margin-top: 45px;
+   min-height: 400px;
 }
 
 .grid-row {
@@ -241,18 +243,6 @@ h2 {
 .grid-item-left p:last-child {
     border: none;
 }
-
-.linkstyle {
-    color: #D2908B;
-    text-decoration: none;
-}
-
-.linkstyle:hover,
-.linkstyle:active,
-.linkstyle:visited {
-    color: #D2908B;
-    text-decoration: none;
-};
 
 .grid-item-right h2,
 .grid-item-right p {
@@ -361,6 +351,8 @@ border-radius: 1px;
     margin-right: 60px;   
 }
 
+/*Блок ссылок*/
+
 .links {
     display: flex;
     flex-direction: row;
@@ -408,6 +400,66 @@ footer a {
 
 .copyright {   
     text-align: center;    
+}
+
+/*Стили ссылок*/
+.linkstyle {
+    color: #D2908B;
+    text-decoration: none;    
+}
+
+.linkstyle:active {
+    color: #D2908B;
+    text-decoration: underline;
+}
+
+.linkstyle:visited {
+    color: #D2908B;
+    text-decoration: none;
+}
+
+.linkstyle:hover {
+    color: #DDBAB8;
+}
+
+.linkslist li a,
+.linkslist li a:visited,
+.linkslist li a:hover,
+.linkslist li a:active {
+color: #000000;
+}
+
+/*Маркеры списка ссылок в карте сайта*/
+.linkslist li {
+    color: #D2908B;
+    list-style-type: disc;
+}
+
+
+/*Оформление блока обьявлений на странице Объявления*/
+
+.announce-line {
+   width: 85%;
+   background: #DDBAB8;
+   font-weight: bold;
+   color: #FFFFFF;
+   min-height: 50px;
+   line-height: 50px;
+   text-indent: 10px;
+   margin-top: 25px;
+   font-size: 1.1rem;
+}
+
+.announce-text {
+    width: 85%;
+    min-height: 125px;
+    text-indent: 10px;
+    padding-top: 5px;    
+}
+
+.end {
+    font-weight: normal;
+    font-size: 1rem;
 }
 
 /*Шрифты и цвет текста*/
@@ -504,29 +556,4 @@ footer a {
 /*показать любой элемент(для js)*/
 .open {
     display: block;
-}
-
-
-.announce-line {
-   width: 85%;
-   background: #DDBAB8;
-   font-weight: bold;
-   color: #FFFFFF;
-   min-height: 50px;
-   line-height: 50px;
-   text-indent: 10px;
-   margin-top: 25px;
-   font-size: 1.1rem;
-}
-
-.announce-text {
-    width: 85%;
-    min-height: 125px;
-    text-indent: 10px;
-    padding-top: 5px;    
-}
-
-.end {
-    font-weight: normal;
-    font-size: 1rem;
 }
