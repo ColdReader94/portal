@@ -189,7 +189,6 @@
 
     /*Контент в одну колонку*/
 
-
     .grid-row {
         flex-direction: column;
     }
@@ -279,12 +278,13 @@
         display: none;
     }
     
+    /*Погода по центру*/
     .weather {
         text-align: center;
     }
     
-   
-    .announce-line {
+    /*Блок обьявлений*/ 
+     .announce-line {
      width: 100%;
      text-indent: 0;
      padding-left: 5px;
@@ -297,5 +297,10 @@
        width: 100%;
     }
     
+    /*Ссылка на почту администратора влево (стр. О сайте))*/
+      .grid-row .grid-item-left p:last-child {
+    text-align: left;
+}
+
 }
 
