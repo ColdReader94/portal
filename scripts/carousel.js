@@ -44,3 +44,22 @@ let carousel = document.querySelector('.carousel');
 carousel.addEventListener("mousedown", function(event){
   event.preventDefault();
 });
+
+
+//Открытие изображений из карусели 
+document.body.addEventListener('click', function(e){
+
+    
+//  for (let ep of carousel.querySelectorAll('img')){
+//      ep.classList.remove('showimg');};
+  
+//               Если кликнули по картинке
+    if (e.target.matches('li img')) {        
+        return (e.target.classList.toggle('showimg'), undefined);        
+    };
+   
+//   клик мимо изображений
+    for (const ep of carousel.querySelectorAll('img'))
+      ep.classList.remove('showimg');
+      
+  });
