@@ -302,5 +302,11 @@
     text-align: left;
 }
 
+.showimg {
+ object-fit: contain;
+  width: 700px;
+  height: 400px;
+}
+
 }
 
