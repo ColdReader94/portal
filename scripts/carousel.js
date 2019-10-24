@@ -1,20 +1,4 @@
 let carousel = document.querySelector('.carousel');
-
-//    let i = 1;
-//    for(let li of carousel.querySelectorAll('li')) {
-//      li.style.position = 'relative';
-//      li.insertAdjacentHTML('beforeend', `<span style="position:absolute;left:0;top:0">${i}</span>`);
-//      i++;
-//    };
-
-//let li = carousel.querySelectorAll('li');
-//
-//for(i = 1; i < li.length; ++i) {
-//    alert(li);
-//     li.style.position = 'relative';
-//     li.insertAdjacentHTML('beforeend', '<span style="position:absolute;left:0;top:0">${i}</span>');
-//}
-
  
     let width = 243; // ширина картинки
     let count = 1 ; // видимое количество изображений
@@ -58,29 +42,29 @@ if (e.target.classList.contains('showimg')) {
 
 //закрыть уже открытое фото если такое есть и перейти на следующее, если нет - открыть новое и вывести описание к нему
 if (e.target.matches('li img')) {
- for (const ep of carousel.querySelectorAll('.showimg, .lic'))
+ for (const ep of document.querySelectorAll('.imgblock, .showimg, .license'))
        ep.remove();
-       parent.append(clone);
+   let block = document.createElement('div');
+           document.body.querySelector('.wrapper').prepend(block);
+           block.classList.add('imgblock');
+       block.append(clone);
        clone.license = document.createElement('div');
        clone.license.innerHTML = e.target.alt;
-//       clone.license.style.margin = "50px";
-//       clone.license.style.background = "#DDBAB8";
-//       clone.license.style.display = "fixed";
-            carousel.prepend(clone.license);
-                    clone.license.classList.add('lic');
-      
-       console.log(clone.license);
+            clone.after(clone.license);
+                    clone.license.classList.add('license');  
+                    let closeX = document.createElement('div');
+                    closeX.classList.add('btnclose');
+                    clone.license.append(closeX);
      return (clone.classList.add('showimg'));      
 };
 //       Не скрывать фото и описание, если клик по описанию
-         if (e.target === document.body.querySelector('.lic')){
+         if (e.target === document.body.querySelector('.license')){
              return false;
          }
        
 //       Скрыть при клике в любом другом месте
-for (const ep of carousel.querySelectorAll(".showimg, .lic"))
+for (const ep of document.querySelectorAll(".imgblock, .showimg, .license"))
        ep.remove(); 
- 
   });
   
   
