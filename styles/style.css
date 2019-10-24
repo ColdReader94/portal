@@ -277,31 +277,11 @@ display: block;
 border: 2px solid rgba(210, 144, 139, 0.5);
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
 border-radius: 1px;
-cursor: zoom-in;
+cursor: pointer;
 }
 
 .carousel img:hover {
       opacity: 0.7;
-}
-
-li .showimg:hover {
-    opacity: 1;
-}
-
-li .showimg {    
-  position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-width: 700px;
-  max-height: 500px;
-  margin: auto;
-  background-color: rgba(245, 226, 225, 0.7);
-  border: none;
-  box-shadow: 0px 25px 25px rgba(10, 10, 10, 0.5);
-cursor: zoom-out;
 }
 
 .arrow {
@@ -316,21 +296,70 @@ cursor: zoom-out;
   text-shadow: 0 3px 4px rgba(0,0,0,0.5);
 }
 
-.lic {
+
+/*Стили блока картинки карусели при их открытии*/
+li .showimg:hover {
+    opacity: 1;
+}
+
+.imgblock {
+   position: fixed;  
+  top: 10px;
+  left: 10px;
+  right: 10px;  
+margin: auto;
+z-index: 100;
+max-width: 700px;
+   box-shadow: 0px 25px 125px rgba(10, 10, 10, 0.8);
+}
+
+.btnclose {    
+    cursor:pointer;
+    color: #F7EFE8;
+    border: 2px solid #F7EFE8;
+    right: 0;
+    background: #605F61;
+    font-size: 31px;
+    font-weight: bold;
     display: block;
-    background: #C3827D;
-/*      position: fixed;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  max-width: 700px;
-  max-height: 500px;
-  margin: auto;
+    position: absolute;
+    line-height: 0px;
+    padding: 15px 5px;
+    background: #D2908B;    
+}
+
+.btnclose::before {
+ content: '\2716';
+}
+
+
+/*Стиль самих картинок*/
+.showimg {    
+  display: block;
+   width: 100%;
+   height: auto;
   background-color: rgba(245, 226, 225, 0.7);
-  border: none;
-  box-shadow: 0px 25px 25px rgba(10, 10, 10, 0.5);*/
+cursor: pointer;
+}
+
+/*Описание и лицензия при открытии картинок*/
+.license {
+  display: block;
+  background: #D2908B;
+  box-sizing: border-box;
+  padding: 2px 5px;
+  width: 100%;
+  height: auto;
+  white-space: pre-line;
+}
+
+.Xclose {
+  display: block;
+  padding: 5px;
+  content: "X"; /* This will render the 'X' */
+  box-shadow: none;
+  text-align: right;
+  background: none;
 }
 
 .arrow:focus {
@@ -528,6 +557,7 @@ color: #000000;
 .tittle,
 .menu li a,
 .menu li:nth-child(2),
+.license,
 h2 {
     font-family: HondaC, Arial, Tahoma, sans-serif;
     font-style: normal;
@@ -547,6 +577,15 @@ h2 {
 .menu .sub-menu a {
     color: #F6EFE8;
     font-size: 1rem;    
+}
+
+.license {
+    color: #F6EFE8;
+    font-size: 1rem;    
+}
+
+.license a {
+    color: #F6EFE8;
 }
 
 h2,
