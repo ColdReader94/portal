@@ -54,7 +54,7 @@ if (e.target.matches('li img')) {
                     clone.license.classList.add('license');  
                     let closeX = document.createElement('div');
                     closeX.classList.add('btnclose');
-                    clone.license.append(closeX);
+                    clone.license.after(closeX);
      return (clone.classList.add('showimg'));      
 };
 //       Не скрывать фото и описание, если клик по описанию

@@ -85,7 +85,11 @@ header {
 .menu li {
   position: relative;
   width: 20%;
-  height: 100px; 
+  height: 100px;
+  border: none;   
+   border-color: #F7EFE8;
+   outline: none;  
+   transition: background-color 0.3s linear;
 }
 
 .menu a {
@@ -94,7 +98,6 @@ header {
   text-decoration: none;
   font-size: 1.25rem;
   line-height: 1.5rem;
-  color: #FFFFFF;
   height: 100%;
   justify-content: center;
   align-items: center;
@@ -143,7 +146,7 @@ header {
 }
 
 .menu li:hover {
-  background-color: #C3827D; 
+  background-color: #C3827D;
 }
 
 .menu > li:hover .sub-menu {
@@ -158,6 +161,7 @@ header {
 .menu li:active {
     border: 4px solid #F7EFE8;
     box-sizing: border-box;
+    transition: border 0.1s ease;
 }
 
 .search-form {
@@ -294,6 +298,7 @@ cursor: pointer;
   transform: scale(2, 4.5); 
   color: #DDBAB8;
   text-shadow: 0 3px 4px rgba(0,0,0,0.5);
+   transition: 0.5s ease;
 }
 
 
@@ -318,18 +323,28 @@ max-width: 700px;
     color: #F7EFE8;
     border: 2px solid #F7EFE8;
     right: 0;
+    border-radius: 50%;
     background: #605F61;
-    font-size: 31px;
+    font-size: 1.5rem;
     font-weight: bold;
     display: block;
     position: absolute;
     line-height: 0px;
     padding: 15px 5px;
-    background: #D2908B;    
+    background: #D2908B;
+    opacity: 0.8;
+ top: 5px;
+ right: 5px; 
+ transition: 0.5s ease;
 }
 
 .btnclose::before {
  content: '\2716';
+}
+
+.btnclose:hover {
+    background: #DDBAB8;
+    color: #FFFFFF;
 }
 
 
@@ -557,7 +572,6 @@ color: #000000;
 .tittle,
 .menu li a,
 .menu li:nth-child(2),
-.license,
 h2 {
     font-family: HondaC, Arial, Tahoma, sans-serif;
     font-style: normal;
@@ -579,14 +593,6 @@ h2 {
     font-size: 1rem;    
 }
 
-.license {
-    color: #F6EFE8;
-    font-size: 1rem;    
-}
-
-.license a {
-    color: #F6EFE8;
-}
 
 h2,
 .texthide {
@@ -620,6 +626,10 @@ footer a {
     line-height: 2.1875rem;
 }
 
+.license {
+    color: #F6EFE8;
+    font-size: 1.2rem;    
+}
 /*версия для слабовидящих*/
 
 /*спрятаные по умолчанию текстовые ссылки версии для слабовидящих*/
