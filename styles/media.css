@@ -87,6 +87,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: flex-start;
+        align-content: center;
         width: 100%;        
     }
 
@@ -101,7 +102,7 @@
     }
 
     .gallery li:last-child {
-        margin-right: 0;   
+        margin-right: 15px;   
     }
  
 .links a img {
@@ -112,9 +113,9 @@
     padding: 10px;
 }
 
-  .weather {
-        text-align: left;
-    };
+.weather {
+        align-self: center;
+    }
 }
 
 /*Малые девайсы (<= 635px)*/
@@ -225,8 +226,9 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: flex-start;
+        flex-wrap: wrap;        
+        align-content: center;
+        justify-content: flex-start;        
     }
 
     .gallery li {
@@ -240,7 +242,7 @@
     }
 
     .gallery li:last-child {
-        margin-right: 0;   
+        margin-right: 15px;   
     }
 
     .carousel {
@@ -266,6 +268,11 @@
         justify-content: center;
     }   
     
+    .column {
+        width: 100%;
+        align-content: center;       
+    }    
+    
     .links a img {
     padding: 10px;
 }
@@ -280,7 +287,7 @@
     
     /*Погода по центру*/
     .weather {
-        text-align: center;
+        align-self: center;
     }
     
     /*Блок обьявлений*/ 
