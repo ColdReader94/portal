@@ -112,7 +112,7 @@ header {
   list-style: none;
   background-color: #D2908B;
   z-index: 1;
-  width: 100%;  
+  width: 100%;
 }
 
 .menu .sub-menu li {
@@ -644,7 +644,25 @@ footer a {
     display: none;
 }
 
-/*показать любой элемент(для js)*/
+/*показать любой элемент c плавной анимацией(для js)*/
 .open {
     display: block;
+    animation: show 0.5s ease;
+}
+
+@keyframes show {
+0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
