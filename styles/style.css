@@ -58,7 +58,6 @@ header {
     vertical-align: middle;
 }
 
-
 /* Главное меню и поиск */
 
 .nav-bar {
@@ -114,6 +113,7 @@ header {
   z-index: 1;
   width: 100%;
 }
+
 
 .menu .sub-menu li {
   height: 50px;
@@ -548,6 +548,24 @@ color: #000000;
     font-size: 1rem;
 }
 
+/*стили таблицы расписания транспорта*/
+table {
+    border: none;
+    border-collapse: collapse;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background: #D2908B;
+    color: white;
+    opacity: 0.5;
+}
+
+tr:nth-child(even) {
+background: #EFE4D9;
+}
+
 /*Шрифты и цвет текста*/
 
 @font-face {
@@ -644,7 +662,7 @@ footer a {
     display: none;
 }
 
-/*показать любой элемент c плавной анимацией(для js)*/
+/*показать .sub-menu c плавной анимацией(для js)*/
 .open {
     display: block;
     animation: show 0.5s ease;
