@@ -9,7 +9,6 @@ body {
     max-width: 1440px;
     margin: 0 auto;
     background: #F6EFE8;
-/*        padding: 0 20px;*/
 }
 
 header {
@@ -59,7 +58,6 @@ header {
 }
 
 /* Главное меню и поиск */
-
 .nav-bar {
     display: flex;
     flex-wrap: nowrap;
@@ -86,7 +84,7 @@ header {
   width: 20%;
   height: 100px;
   border: none;   
-   border-color: #F7EFE8;
+   border-color: #F6EFE8;
    outline: none;  
    transition: background-color 0.3s linear;
 }
@@ -159,7 +157,7 @@ header {
 }
 
 .menu li:active {
-    border: 4px solid #F7EFE8;
+    border: 4px solid #F6EFE8;
     box-sizing: border-box;
     transition: border 0.1s ease;
 }
@@ -193,7 +191,6 @@ input:focus {
 }
 
 /*Кнопка "назад" и ссылка на открытую страницу*/
-
 .navigation {
     padding: 5px 20px; 
     
@@ -207,7 +204,6 @@ input:focus {
 }
 
 /*Сетка контента*/
-
 .content {
    margin-top: 45px;
    min-height: 400px;
@@ -276,7 +272,6 @@ iframe {
 .carousel img {
 width: 100%;
 height: 100%;
-  /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
 display: block;  
 border: 2px solid rgba(210, 144, 139, 0.5);
 box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
@@ -301,13 +296,12 @@ cursor: pointer;
    transition: 0.5s ease;
 }
 
-
 /*Стили блока картинки карусели при их открытии*/
 li .showimg:hover {
     opacity: 1;
 }
 
-.imgblock {
+.imgblock {    
    position: fixed;  
   top: 10px;
   left: 10px;
@@ -320,11 +314,11 @@ max-width: 700px;
 
 .btnclose {    
     cursor:pointer;
-    color: #F7EFE8;
-    border: 2px solid #F7EFE8;
+    color: #F6EFE8;
+    border: 2px solid #F6EFE8;
     right: 0;
     border-radius: 50%;
-    background: #605F61;
+    background: #D2908B;
     font-size: 1.5rem;
     font-weight: bold;
     display: block;
@@ -347,7 +341,6 @@ max-width: 700px;
     color: #FFFFFF;
 }
 
-
 /*Стиль самих картинок*/
 .showimg {    
   display: block;
@@ -355,6 +348,7 @@ max-width: 700px;
    height: auto;
   background-color: rgba(245, 226, 225, 0.7);
 cursor: pointer;
+margin: 0 auto;
 }
 
 /*Описание и лицензия при открытии картинок*/
@@ -366,15 +360,6 @@ cursor: pointer;
   width: 100%;
   height: auto;
   white-space: pre-line;
-}
-
-.Xclose {
-  display: block;
-  padding: 5px;
-  content: "X"; /* This will render the 'X' */
-  box-shadow: none;
-  text-align: right;
-  background: none;
 }
 
 .arrow:focus {
@@ -415,8 +400,6 @@ cursor: pointer;
   padding: 0;
   list-style: none;
   transition: margin-left 250ms;
-  /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
-  /* http://davidwalsh.name/remove-whitespace-inline-block */
   font-size: 0;
 }
 
@@ -438,7 +421,6 @@ cursor: pointer;
 }
 
 /*Блок ссылок*/
-
 .links {
     display: flex;
     flex-direction: row;
@@ -521,9 +503,7 @@ color: #000000;
     list-style-type: disc;
 }
 
-
 /*Оформление блока обьявлений на странице Объявления*/
-
 .announce-line {
    width: 85%;
    background: #DDBAB8;
@@ -567,7 +547,6 @@ background: #EFE4D9;
 }
 
 /*Шрифты и цвет текста*/
-
 @font-face {
     font-family: 'HondaC';
     src: local('HondaC'),
@@ -577,15 +556,6 @@ background: #EFE4D9;
     font-weight: normal;
     font-style: normal;
 }
-
-/*@font-face {
-    font-family: HondaC;
-    src: local(HondaC), url(../fonts/HondaC.ttf);
-}*/
-/*
-@font-face {
-    font-family: MyraidPro, Arial, Tahoma, sans-serif;
-}*/
 
 .tittle,
 .menu li a,
@@ -611,7 +581,6 @@ h2 {
     font-size: 1rem;    
 }
 
-
 h2,
 .texthide {
     font-size: 1.5rem;    
@@ -636,7 +605,7 @@ footer a,
 }
 
 footer a {
-    color: #F7EFE8;
+    color: #F6EFE8;
 }
 
 .copyright {
@@ -648,9 +617,8 @@ footer a {
     color: #F6EFE8;
     font-size: 1.2rem;    
 }
-/*версия для слабовидящих*/
-
-/*спрятаные по умолчанию текстовые ссылки версии для слабовидящих*/
+/*версия для слабовидящих
+спрятаные по умолчанию текстовые ссылки версии для слабовидящих*/
 .texthide {
     display: none;
     padding: 10px;

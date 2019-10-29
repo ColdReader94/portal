@@ -312,6 +312,17 @@
 .license {
     font-size: 0.8rem;
 }
-
 }
 
+/*Размер открытого фото карусели при альбомной ориентации устройства:*/ 
+@media only screen and (min-width : 261px) and (max-width: 961px) { 
+ 
+    .imgblock {
+        width: 90%;       
+        background: #D2908B;
+    }
+    
+    .imgblock img {
+        width: 50%;       
+    }
+}
