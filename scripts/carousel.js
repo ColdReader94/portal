@@ -67,8 +67,9 @@ for (const ep of document.querySelectorAll(".imgblock, .showimg, .license"))
        ep.remove(); 
   });
   
-  
-  
+
+
+
   
   
   
