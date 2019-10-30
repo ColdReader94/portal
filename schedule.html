@@ -46,17 +46,36 @@
                 <div class="navigation"><a href="#"><img src="images/back.png" alt="Назад" title="Назад" /></a><a href="#"></a></div>
                 <div class="content">
                     <div class="grid-row">
-                        <div class="grid-item-left">
+                        <div class="grid-item-left" style="overflow-x: auto; overflow-y: hidden;">                            
                             <h2>Расписание транспорта</h2>                            
                             <table>
-                                <tr><th>Автобусы</th><th>Отправление</th><th>Прибытие</th><th>Отправление с конечного пункта</th><th>Прибытие в Василишки</th><th>Дни курсирования</th></tr>
+                                <thead>
+                                <tr>
+                                    <th>Автобусы</th>
+                                    <th>Отправление</th>
+                                    <th>Прибытие</th>
+                                    <th>Отправление обратно</th>
+                                    <th>Прибытие в Василишки</th>
+                                    <th>Дни курсирования</th>
+                                </tr>
+                                </thead>
+                                <tbody>
                                 <tr><td>ГРОДНО АВ - ЛИДА АВ</td><td>9:53</td><td>10:34</td><td>11:15</td><td>11:52</td><td>сб, вс</td></tr>
-                                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>
-                                <tr><td></td><td></td><td></td><td></td><td></td><td></td></tr>                              
+                                <tr><td>ГРОДНО АВ - ЛИДА АВ</td><td>16:58</td><td>17:39</td><td>-</td><td>-</td><td>пт</td></tr>
+                                <tr><td>ГРОДНО АВ - ЛИДА АВ</td><td>18:27</td><td>19:08</td><td>-</td><td>-</td><td>вс</td></tr>
+                                <tr><td>ЛИДА АВ - ГРОДНО АВ</td><td>12:02</td><td>13:14</td><td>-</td><td>-</td><td>сб, вс</td></tr>
+                                <tr><td>ЛИДА АВ - ГРОДНО АВ</td><td>19:19</td><td>20:29</td><td>-</td><td>-</td><td>пт, сб</td></tr>
+                                <tr><td>ЛИДА АВ - ГРОДНО АВ</td><td>20:22</td><td>21:34</td><td>-</td><td>-</td><td>вс</td></tr>
+                                <tr><td>ЩУЧИН АС — ПЕТЮЛЕВЦЫ ПЗ</td><td>17:09</td><td>17:55</td><td>-</td><td>-</td><td>пт, сб</td></tr>
+                                <tr><td>ЩУЧИН АС — ПЕТЮЛЕВЦЫ ПЗ</td><td>6:45</td><td>7:31</td><td>-</td><td>-</td><td>пт, сб</td></tr>
+                                <tr><td>ЩУЧИН АС — ВОЙЩУКИ</td><td>8:30</td><td>8:40</td><td>-</td><td>-</td><td>вс</td></tr>
+                                <tr><td>ЩУЧИН АС — ВОЙЩУКИ</td><td>16:38</td><td>16:56</td><td>-</td><td>-</td><td>вс</td></tr>
+                                <tr><td>ЩУЧИН АС - БАКШТЫ</td><td>14:03</td><td>14:33</td><td>-</td><td>-</td><td>пн, ср, вс</td></tr>
+                                </tbody>
                             </table>    
                         </div>
                         <div class="grid-item-right weather">
-                            <p><a target="_blank" href="https://nochi.com/weather/vasilishki-w191070"><img src="https://w.bookcdn.com/weather/picture/32_w191070_1_20_e67e22_250_d35401_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=589&anc_id=2123"  alt="booked.net"/></a>
+                            <a target="_blank" href="https://nochi.com/weather/vasilishki-w191070"><img src="https://w.bookcdn.com/weather/picture/32_w191070_1_20_e67e22_250_d35401_ffffff_ffffff_1_2071c9_ffffff_0_6.png?scode=2&domid=589&anc_id=2123"  alt="booked.net"/></a>
                           
                         </div>                    
                     </div>
@@ -64,8 +83,7 @@
                         <div class="grid-item-left">                                             
                         </div>
                         <div class="grid-item-right">
-                            <h2>Ссылки</h2>
-                            <p>
+                            <h2>Ссылки</h2>                           
                             <div class="links">
                                 <div class="column">
                                     <a href="http://vasilishki.by"><img src="images/oao.png" alt="ОАО Василишки" title="ОАО Василишки" /><span class="texthide">ОАО Василишки</span></a>

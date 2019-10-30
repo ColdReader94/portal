@@ -221,6 +221,7 @@ input:focus {
 .grid-item-left {
   padding: 0 20px;  
   flex: 2 1 0%;
+  text-align: justify;   
 }
 
 .grid-item-right {
@@ -229,23 +230,17 @@ input:focus {
 }
 
 h2 {
-   margin: 0;   
+   margin: 0;
+margin-bottom: 15px;   
 }
 
-.grid-item-left p {
-    text-align: justify;
-    margin: 0;
-    padding: 15px 0;
-    padding-bottom: 120px;
-    border-bottom: 2px dashed rgba(210, 144, 139, 0.5);
+.grid-item-left h2 + p {
+    margin-top: 120px;
+    padding-top: 15px;
+    border-top: 2px dashed rgba(210, 144, 139, 0.5);
 }
 
-.grid-item-left p:last-child {
-    border: none;
-}
-
-.grid-item-right h2,
-.grid-item-right p {
+.grid-item-right {
     padding: 0;
 }
 
@@ -254,8 +249,7 @@ iframe {
      box-sizing: border-box;
      border: 2px solid #D2908B;
      width: 100%;
-     min-height: 292px;
-     margin-top: 15px;     
+     min-height: 292px;          
 }
 
 /*Погода*/
@@ -285,7 +279,7 @@ cursor: pointer;
 
 .arrow {
   position: absolute;
-  top: 85px;
+  top: 105px;
   padding: 0; 
   font-size: 3.125rem;
   line-height: 24px; 
@@ -531,20 +525,31 @@ color: #000000;
 }
 
 /*стили таблицы расписания транспорта*/
-table {
+table {   
     border: none;
     border-collapse: collapse;
     text-align: center;
     vertical-align: middle;
+    font-size: 0.8rem;
+    max-width: 100%;    
 }
 
 th {
-    background: #D2908B;
-    color: white;
-    opacity: 0.5;
+font-family: Tahoma;
+font-weight: bold;  
+    background: rgba(210, 144, 139, 0.5);
+    color: #FFFFFF;    
+    width: 16%;
+    height: 50px;
 }
 
-tr:nth-child(even) {
+td {
+    font-family: Tahoma;
+    width: 16%;
+    height: 50px;
+}
+
+tr:nth-child(odd) {
 background: #EFE4D9;
 }
 
@@ -589,7 +594,7 @@ h2,
     color: #D2908B
 }
 
-p {    
+.content {    
     font-family: "Myriad Pro", Tahoma, sans-serif;
     font-size: 1rem;
     line-height: 1.1875rem;
