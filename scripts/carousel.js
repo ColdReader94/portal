@@ -1,4 +1,4 @@
-let carousel = document.querySelector('.carousel');
+    let carousel = document.querySelector('.carousel');
  
     let width = 243; // ширина картинки
     let count = 1 ; // видимое количество изображений

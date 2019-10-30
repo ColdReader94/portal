@@ -309,20 +309,40 @@
     text-align: left;
 }
 
+
+  .grid-item-left {
+        overflow-x: scroll;
+        overflow-y: hidden;
+    }
+    table {
+      font-size: 0.4rem; 
+      }
+      
+      td {
+          font-size: 0.4rem;
+      }
+
 .license {
     font-size: 0.8rem;
 }
 }
 
-/*Размер открытого фото карусели при альбомной ориентации устройства:*/ 
-@media screen and (min-width: 320px) and (max-width: 992px) and (orientation:landscape) { 
- 
-    .imgblock {
-        width: 90%;       
-        background: #D2908B;
-    }
-    
-    .imgblock img {
-        width: 50%;
-    }
+/*Размер и прокрутка открытого фото карусели при альбомной ориентации устройства:*/ 
+@media screen and (min-width: 500px) and (orientation:landscape) { 
+
+.imgblock {
+min-width: 45%;
+max-height: 95%;
+overflow-y: auto;
+overflow-x: hidden;
 }
+
+.img {
+    max-height: 80%;
+    width: auto;
+}
+}
+
+
+
+  
