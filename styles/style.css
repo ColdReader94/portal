@@ -240,9 +240,6 @@ margin-bottom: 15px;
     border-top: 2px dashed rgba(210, 144, 139, 0.5);
 }
 
-.grid-item-right {
-    padding: 0;
-}
 
 /*Местоположение*/
 iframe {
@@ -534,17 +531,14 @@ table {
     max-width: 100%;    
 }
 
-th {
-font-family: Tahoma;
-font-weight: bold;  
+th {  
     background: rgba(210, 144, 139, 0.5);
     color: #FFFFFF;    
     width: 16%;
     height: 50px;
 }
 
-td {
-    font-family: Tahoma;
+td { 
     width: 16%;
     height: 50px;
 }
@@ -623,6 +617,15 @@ footer a {
 .license {
     color: #F6EFE8;
     font-size: 1.2rem;    
+}
+
+th {
+font-family: Tahoma;
+font-weight: bold;
+}  
+
+td {
+font-family: Tahoma;
 }
 /*версия для слабовидящих
 спрятаные по умолчанию текстовые ссылки версии для слабовидящих*/
