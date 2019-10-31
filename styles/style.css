@@ -12,30 +12,30 @@ body {
 }
 
 header {
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	color: #D2908B;
-        background: #F6EFE8;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: #D2908B;
+    background: #F6EFE8;
 }
 
 .tittle {
-	font-size: 1.875rem;
-	line-height: 2.25rem;
-	padding-left: 65px;
-	align-self: center;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    padding-left: 65px;
+    align-self: center;
 }
 
 .header-links {
-        margin-top: 65px;
-	margin-bottom: 5px;
-	display: inline-flex;
-        align-items: center;        
+    margin-top: 65px;
+    margin-bottom: 5px;
+    display: inline-flex;
+    align-items: center;        
 }
 
 .header-links a {
-	color: #D2908B;
-	text-decoration: none;        
+    color: #D2908B;
+    text-decoration: none;        
 }
 
 .language {
@@ -44,12 +44,12 @@ header {
 }
 
 .blind {        
-        display: inline-block;
-        margin: 20px;	
-        background: transparent; 
-        border: none;
-        box-shadow: none;
-        cursor: pointer;
+    display: inline-block;
+    margin: 20px;	
+    background: transparent; 
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
 }
 
 .blind img {
@@ -68,87 +68,87 @@ header {
 }
 
 .menu {  
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: flex-start;
-  align-items: stretch;
-  flex-wrap: nowrap;
-  width: 66%;
-  cursor: pointer;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    width: 66%;
+    cursor: pointer;
 }
 
 .menu li {
-  position: relative;
-  width: 20%;
-  height: 100px;
-  border: none;   
-   border-color: #F6EFE8;
-   outline: none;  
-   transition: background-color 0.3s linear;
+    position: relative;
+    width: 20%;
+    height: 100px;
+    border: none;   
+    border-color: #F6EFE8;
+    outline: none;  
+    transition: background-color 0.3s linear;
 }
 
 .menu a {
-  text-align: center;
-  display: flex;
-  text-decoration: none;
-  font-size: 1.25rem;
-  line-height: 1.5rem;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  padding: 0 5px;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5px;
 }
 
 .menu .sub-menu {
-  position: absolute;
-  display: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  background-color: #D2908B;
-  z-index: 1;
-  width: 100%;
+    position: absolute;
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #D2908B;
+    z-index: 1;
+    width: 100%;
 }
 
 
 .menu .sub-menu li {
-  height: 50px;
-  width: 100%;
+    height: 50px;
+    width: 100%;
 }
-  
+
 .menu .sub-menu a {
-  margin-bottom: -1px;
-  color: white;
-  text-decoration: none;
-  padding: 3px 5px;  
+    margin-bottom: -1px;
+    color: white;
+    text-decoration: none;
+    padding: 3px 5px;  
 }
 
 .menu li:nth-child(2) span::before {
-  content: ' ▼';
+    content: ' ▼';
 }
 
 .menu li:nth-child(2) span.up::before {
-  content: ' ▲';
+    content: ' ▲';
 }
 
 
 .menu li:nth-child(2) span {
-   display: flex;
-   line-height: 1.5rem;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-   text-align: center;
+    display: flex;
+    line-height: 1.5rem;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .menu li:hover {
-  background-color: #C3827D;
+    background-color: #C3827D;
 }
 
 .menu > li:hover .sub-menu {
-  box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .sub-menu.open {
@@ -167,7 +167,7 @@ header {
     margin-right : 17px;
     width: 300px;
     padding: 20px 0;
-       
+
 }
 
 .search-form .search-text {
@@ -193,25 +193,25 @@ input:focus {
 /*Кнопка "назад" и ссылка на открытую страницу*/
 .navigation {
     padding: 5px 20px; 
-    
+
 }
 
 .navigation a:last-child {
-   display: inline;  
-   text-decoration: none;
-   padding-left: 20px;
-   vertical-align: top;   
+    display: inline;  
+    text-decoration: none;
+    padding-left: 20px;
+    vertical-align: top;   
 }
 
 /*Сетка контента*/
 .content {
-   margin-top: 45px;
-   min-height: 400px;
+    margin-top: 45px;
+    min-height: 400px;
 }
 
 .grid-row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .row-two {
@@ -219,19 +219,19 @@ input:focus {
 }
 
 .grid-item-left {
-  padding: 0 20px;  
-  flex: 2 1 0%;
-  text-align: justify;   
+    padding: 0 20px;  
+    flex: 2 1 0%;
+    text-align: justify;   
 }
 
 .grid-item-right {
-  padding: 0 20px;
-  flex: 1 2 0%;
+    padding: 0 20px;
+    flex: 1 2 0%;
 }
 
 h2 {
-   margin: 0;
-margin-bottom: 15px;   
+    margin: 0;
+    margin-bottom: 15px;   
 }
 
 .grid-item-left h2 + p {
@@ -243,48 +243,52 @@ margin-bottom: 15px;
 
 /*Местоположение*/
 iframe {
-     box-sizing: border-box;
-     border: 2px solid #D2908B;
-     width: 100%;
-     min-height: 292px;          
+    box-sizing: border-box;
+    border: 2px solid #D2908B;
+    width: 100%;
+    min-height: 292px;          
 }
 
 /*Погода*/
 .weather {
-    text-align: right;
+    text-align: right;   
+}
+
+.weather img {
+    margin-top: 25px;
 }
 
 .carousel {
-  position: relative;  
-  padding: 0 60px;
-  padding-top: 15px;
+    position: relative;  
+    padding: 0 60px;
+    padding-top: 15px;
 }
 
 .carousel img {
-width: 100%;
-height: 100%;
-display: block;  
-border: 2px solid rgba(210, 144, 139, 0.5);
-box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
-border-radius: 1px;
-cursor: pointer;
+    width: 100%;
+    height: 100%;
+    display: block;  
+    border: 2px solid rgba(210, 144, 139, 0.5);
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 1px;
+    cursor: pointer;
 }
 
 .carousel img:hover {
-      opacity: 0.7;
+    opacity: 0.7;
 }
 
 .arrow {
-  position: absolute;
-  top: 105px;
-  padding: 0; 
-  font-size: 3.125rem;
-  line-height: 24px; 
-  display: inline-block;    
-  transform: scale(2, 4.5); 
-  color: #DDBAB8;
-  text-shadow: 0 3px 4px rgba(0,0,0,0.5);
-   transition: 0.5s ease;
+    position: absolute;
+    top: 105px;
+    padding: 0; 
+    font-size: 3.125rem;
+    line-height: 24px; 
+    display: inline-block;    
+    transform: scale(2, 4.5); 
+    color: #DDBAB8;
+    text-shadow: 0 3px 4px rgba(0,0,0,0.5);
+    transition: 0.5s ease;
 }
 
 /*Стили блока картинки карусели при их открытии*/
@@ -293,15 +297,15 @@ li .showimg:hover {
 }
 
 .imgblock {    
-   position: fixed;  
-  top: 10px;
-  left: 10px;
-  right: 10px;  
-margin: auto;
-z-index: 100;
-min-width: 45%;
-max-width: 700px;
-box-shadow: 0px 25px 125px rgba(10, 10, 10, 0.8);
+    position: fixed;  
+    top: 10px;
+    left: 10px;
+    right: 10px;  
+    margin: auto;
+    z-index: 100;
+    min-width: 45%;
+    max-width: 700px;
+    box-shadow: 0px 25px 125px rgba(10, 10, 10, 0.8);
 
 }
 
@@ -320,13 +324,13 @@ box-shadow: 0px 25px 125px rgba(10, 10, 10, 0.8);
     padding: 15px 5px;
     background: #D2908B;
     opacity: 0.8;
- top: 5px;
- right: 5px; 
- transition: 0.5s ease;
+    top: 5px;
+    right: 5px; 
+    transition: 0.5s ease;
 }
 
 .btnclose::before {
- content: '\2716';
+    content: '\2716';
 }
 
 .btnclose:hover {
@@ -336,73 +340,73 @@ box-shadow: 0px 25px 125px rgba(10, 10, 10, 0.8);
 
 /*Стиль самих картинок*/
 .showimg {    
-  display: block;
-   width: 100%;
-   height: auto;
-  background-color: rgba(245, 226, 225, 0.7);
-cursor: pointer;
-margin: 0 auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: rgba(245, 226, 225, 0.7);
+    cursor: pointer;
+    margin: 0 auto;
 }
 
 /*Описание и лицензия при открытии картинок*/
 .license {
-  display: block;
-  background: #D2908B;
-  box-sizing: border-box;
-  padding: 2px 5px;
-  width: 100%;
-  height: auto;
-  white-space: pre-line;
+    display: block;
+    background: #D2908B;
+    box-sizing: border-box;
+    padding: 2px 5px;
+    width: 100%;
+    height: auto;
+    white-space: pre-line;
 }
 
 .arrow:focus {
-  outline: none;
+    outline: none;
 }
 
 .arrow:hover {  
-  cursor: pointer;
-  color: #F5E2E1;
-  outline: none;
+    cursor: pointer;
+    color: #F5E2E1;
+    outline: none;
 }
 
 .arrow:active {
-  cursor: pointer;
-  color: #FDF9F9;
-  outline: none;
+    cursor: pointer;
+    color: #FDF9F9;
+    outline: none;
 }
 
 .prev {
-  left: 2px;
+    left: 2px;
 }
 
 .next {
-  right: 2px;
+    right: 2px;
 }
 
 .gallery {
-  max-width: 900px;
-  overflow: hidden;
-  background: #F5E2E1;
-  margin: 0;  
+    max-width: 900px;
+    overflow: hidden;
+    background: #F5E2E1;
+    margin: 0;  
 }
 
 .gallery ul {
-  height: 160px;
-  max-width: 9999px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  transition: margin-left 250ms;
-  font-size: 0;
+    height: 160px;
+    max-width: 9999px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    transition: margin-left 250ms;
+    font-size: 0;
 }
 
 .gallery li {
-  width: 200px;
-  height: 145px;
-  display: inline-block;
-  margin: 5px 0;
-  margin-right: 35px;
-  text-align: center;
+    width: 200px;
+    height: 145px;
+    display: inline-block;
+    margin: 5px 0;
+    margin-right: 35px;
+    text-align: center;
 }
 
 .gallery li:first-child {
@@ -438,25 +442,25 @@ footer a {
     align-items: center;
     text-decoration: none;       
 }
-    
+
 .feedback {      
-   background-image: url(../images/footer-sprite.png);
-   background-repeat: no-repeat;
-   background-position: 0px -10px;
-   width: 25px;
-   height: 20px;
-   margin-left: 20px;
-   margin-right: 10px;   
+    background-image: url(../images/footer-sprite.png);
+    background-repeat: no-repeat;
+    background-position: 0px -10px;
+    width: 25px;
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 10px;   
 }
 
 .sitemap {   
-   background-image: url(../images/footer-sprite.png);
-   background-repeat: no-repeat;
-   background-position: -35px -10px;
-   width: 25px;
-   height: 20px;
-   margin-left: 10px;
-   margin-right: 20px; 
+    background-image: url(../images/footer-sprite.png);
+    background-repeat: no-repeat;
+    background-position: -35px -10px;
+    width: 25px;
+    height: 20px;
+    margin-left: 10px;
+    margin-right: 20px; 
 }
 
 .copyright {   
@@ -487,7 +491,7 @@ footer a {
 .linkslist li a:visited,
 .linkslist li a:hover,
 .linkslist li a:active {
-color: #000000;
+    color: #000000;
 }
 
 /*Маркеры списка ссылок в карте сайта*/
@@ -498,15 +502,14 @@ color: #000000;
 
 /*Оформление блока обьявлений на странице Объявления*/
 .announce-line {
-   width: 85%;
-   background: #DDBAB8;
-   font-weight: bold;
-   color: #FFFFFF;
-   min-height: 50px;
-   line-height: 50px;
-   text-indent: 10px;
-   margin-top: 25px;
-   font-size: 1.1rem;
+    width: 85%;
+    background: #DDBAB8;
+    font-weight: bold;
+    color: #FFFFFF;
+    min-height: 50px;
+    line-height: 50px;
+    text-indent: 10px;   
+    font-size: 1.1rem;
 }
 
 .announce-text {
@@ -526,8 +529,7 @@ table {
     border: none;
     border-collapse: collapse;
     text-align: center;
-    vertical-align: middle;
-    font-size: 0.8rem;
+    vertical-align: middle;   
     max-width: 100%;    
 }
 
@@ -544,7 +546,7 @@ td {
 }
 
 tr:nth-child(odd) {
-background: #EFE4D9;
+    background: #EFE4D9;
 }
 
 /*Шрифты и цвет текста*/
@@ -620,12 +622,16 @@ footer a {
 }
 
 th {
-font-family: Tahoma;
-font-weight: bold;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 1rem;
+    line-height: 1rem;
 }  
 
 td {
-font-family: Tahoma;
+    font-family: Tahoma;
+    font-size: 0.8rem;
+    line-height: 1rem;
 }
 /*версия для слабовидящих
 спрятаные по умолчанию текстовые ссылки версии для слабовидящих*/
@@ -647,7 +653,7 @@ font-family: Tahoma;
 }
 
 @keyframes show {
-0% {
+    0% {
         display: none;
         opacity: 0;
     }

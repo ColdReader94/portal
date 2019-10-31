@@ -1,6 +1,6 @@
 
 .menu > li:hover .sub-menu {
-  display: block;
+    display: block;
 }
 
 .arrow {
@@ -14,4 +14,4 @@
 
 .navigation {
     display: none;
-};
+}
